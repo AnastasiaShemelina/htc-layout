@@ -1,0 +1,259 @@
+@font-face {
+	font-family: 'Rubikreg';
+	src: url(../fonts/Rubik-Regular.ttf);
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	width: 1180px;
+	/* height: 100vh; */
+	margin: 0 auto;
+	font-family: 'Rubikreg';
+}
+
+header{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between; 
+	align-items: center;
+	margin-top: 32px;
+	margin-bottom: 44px;
+}
+.header_logo-img{
+	height: 40px;
+	margin-right: 11.88px;
+}
+.header_logo{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+button{
+	border: none;
+	text-decoration: none;
+	background-color: transparent;
+}
+.header_login{
+	border: none;
+	text-decoration: none;
+	background-color: #E5261E;
+	border-radius: 4px;
+	height: 38px;
+	width: 113px;
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+}
+.header_login:hover{
+	background-color: #CC221B;
+	cursor: pointer;
+}
+
+input[type=search]{
+	width: 320px;
+	border: none;
+	border-bottom: 1px solid black;
+	padding-bottom: 6px;
+	font-weight: 400;
+	font-size: 16px;
+	color: #828282;
+}
+input[type=search]:focus{
+	outline: none;
+}
+input[type=submit] {
+	background: none;
+	border: none;
+	margin-left: 32px;
+	font-weight: 500;
+	font-size: 16px;
+	color: #E5261E;
+}
+input[type=submit]:hover{
+	color: #CC221B;
+	cursor: pointer;
+}
+form{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+nav{
+	display: flex;
+	justify-content: center;
+}
+ul{
+	display: flex;
+	width: 311px;
+	justify-content: space-between;
+}
+li{
+	list-style-type: none;
+}
+
+li a{
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 28px;
+	color: #333333;
+}
+
+li a:hover{
+	color: #E5261E;
+	border-bottom: 2px solid #E5261E;
+	padding-bottom: 9px;
+	cursor: pointer;
+}
+.h1-title{
+	margin-bottom: 16px;
+	margin-top: 32px;
+	font-weight: 500;
+	font-size: 24px;
+	color: #333333;
+}
+.movies{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.movie-item{
+	width: 280px;
+	position: relative;
+}
+.movie-item-text{
+	text-align: justify;
+	margin-top: 16px;
+}
+.movie-item-text-description{
+	width: 248px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 338px;
+	background-color: #333333;
+	opacity: 0;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 140%;
+	padding: 16px;
+	color: #f2f2f2;
+}
+.movie-item-text-description:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+.genres{
+	display: flex;
+	justify-content: space-between;
+}
+.genre-item{
+	width: 280px;
+	height: 208px;
+	opacity: 1;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	justify-content: center;
+}
+.genre-smile{
+	font-size: 48px;
+}
+.genre-text-1{
+	position: absolute;
+	left: 34.29%;
+	right: 35%;
+	top: 76.92%;
+	bottom: 11.54%;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	
+	color: #FFFFFF;
+}
+.genre-text-2{
+	position: absolute;
+	left: 38.21%;
+	right: 38.57%;
+	top: 76.92%;
+	bottom: 11.54%;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.genre-text-3{
+	position: absolute;
+	left: 28.93%;
+	right: 29.29%;
+	top: 76.92%;
+	bottom: 11.54%;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.genre-text-4{
+	position: absolute;
+	left: 38.21%;
+	right: 38.93%;
+	top: 76.92%;
+	bottom: 11.54%;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	
+	color: #FFFFFF;
+}
+.comedy{
+	background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+	box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.drama{
+	background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+	box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.fantastic{
+	background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+	box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.horror{
+	background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+	box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.genre-item:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+footer{
+	background-color: #f2f2f2;
+	margin-top: 72px;
+}
+.footer-logo{
+	float: left;
+	margin-right: 39.98px;
+}
+.footer-style{
+	padding: 28px 0;
+}
+.footer-text-middle{
+	margin-top: 6px;
+	margin-bottom: 10px;
+}
+
+p a{
+text-decoration: none;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #E5261E;
+}
